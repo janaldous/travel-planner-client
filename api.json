@@ -1,0 +1,7 @@
+{
+    "npmName": "travel-planner-client",
+    "npmVersion": "1.0.0",
+    "snapshot": true,
+    "supportsES6": false,
+    "modelPropertyNaming": "original"
+}

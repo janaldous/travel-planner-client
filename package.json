@@ -1,0 +1,25 @@
+{
+  "name": "travel-planner-client",
+  "version": "1.0.0",
+  "description": "client for travel-planner-api",
+  "main": "index.js",
+  "scripts": {
+    "api": "rm -rf gen/api && openapi-generator generate -i $API_URL/v2/api-docs --skip-validate-spec --generator-name typescript-fetch -o ./src --config api.json && cd src && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janaldous/travel-planner-client.git"
+  },
+  "author": "Jat Torres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janaldous/travel-planner-client/issues"
+  },
+  "homepage": "https://github.com/janaldous/travel-planner-client#readme",
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^1.0.10-4.2.3"
+  },
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
+}
